@@ -1,6 +1,5 @@
 using UnityEngine;
-
-namespace Niveau2
+namespace Niveau5
 {
     public class Pipes : MonoBehaviour
     {
@@ -10,7 +9,6 @@ namespace Niveau2
         {
             leftEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).x - 1f;
         }
-
         private void Update()
         {
             transform.position += Vector3.left * speed * Time.deltaTime;
