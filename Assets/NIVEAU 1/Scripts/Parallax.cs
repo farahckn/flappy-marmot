@@ -1,18 +1,20 @@
 using UnityEngine;
-
-public class Parallax : MonoBehaviour
+namespace Niveau1
 {
-
-    private MeshRenderer MeshRenderer;
-    public float animationSpeed = 1f;
-
-    private void Awake()
+    public class Parallax : MonoBehaviour
     {
-        MeshRenderer = GetComponent<MeshRenderer>();
-    }
 
-    private void Update()
-    {
-        MeshRenderer.material.mainTextureOffset += new Vector2(animationSpeed * Time.deltaTime, 0);
+        private MeshRenderer MeshRenderer;
+        public float animationSpeed = 1f;
+
+        private void Awake()
+        {
+            MeshRenderer = GetComponent<MeshRenderer>();
+        }
+
+        private void Update()
+        {
+            MeshRenderer.material.mainTextureOffset += new Vector2(animationSpeed * Time.deltaTime, 0);
+        }
     }
 }
