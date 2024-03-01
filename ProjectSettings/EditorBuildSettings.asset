@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/NIVEAU 4/Scenes/Flappy-marmot.unity
+    path: Assets/NIVEAU 4/Scenes/LEVEL04.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/NIVEAU 1/Scenes/LEVEL01.unity
+    guid: 09166225a82173a4f82249994fb2196b
+  - enabled: 1
+    path: Assets/NIVEAU 2/Scenes/LEVEL02.unity
+    guid: c9c8f1b4c0837bc418df33f0d4fbc6f5
+  - enabled: 1
+    path: Assets/NIVEAU 3/Scenes/LEVEL03.unity
+    guid: 5579b196fc9624645a72e16e798a5501
+  - enabled: 1
+    path: Assets/NIVEAU 5/Scenes/LEVEL05.unity
+    guid: b8e1cb4708e4e7340af3f0cede053db6
   m_configObjects: {}

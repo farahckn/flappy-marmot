@@ -1,19 +1,31 @@
 using UnityEngine;
 using UnityEngine.UI;
-namespace Niveau4 {
-public class GameManager : MonoBehaviour
+namespace Niveau4 
 {
-    public Player player;
-    public Text scoreText;
-    public GameObject playButton;
-    public GameObject gameOver;
+    public class GameManager : MonoBehaviour
+    {
+        public Player player;
+        public Text scoreText;
+        public GameObject playButton;
+        public GameObject gameOver;
+        public Button level5Button; 
+
     private int score;
 
     private void Awake()
     {
         Application.targetFrameRate = 60;
-
         Pause();
+        level5Button.gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (score >= 3)
+        {
+            level5Button.gameObject.SetActive(true);
+            Pause();
+        }
     }
 
     public void Play()
@@ -53,5 +65,10 @@ public class GameManager : MonoBehaviour
         score++;
         scoreText.text = score.ToString();
     }
+
+    public void LoadLevel5()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("LEVEL05");
+        }
 }
 }
