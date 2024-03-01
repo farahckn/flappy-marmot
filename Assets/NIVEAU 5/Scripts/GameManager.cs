@@ -10,11 +10,20 @@ namespace Niveau5
     public GameObject gameOver;
 
     private int score;
+    private bool isLevel5 = false;
 
     private void Awake()
     {
       Application.targetFrameRate = 60;
       Pause();
+    }
+
+    private void Update()
+    {
+      if (isLevel5)
+      {
+        return;
+      }
     }
 
     public void Play()
@@ -53,5 +62,10 @@ namespace Niveau5
       score++;
       scoreText.text = score.ToString();
     }
+
+    public void SetLevel5()
+        {
+            isLevel5 = true;
+        }
   }
 }
