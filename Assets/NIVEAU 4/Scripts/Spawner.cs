@@ -1,5 +1,5 @@
 using UnityEngine;
-
+namespace Niveau4 {
 public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
@@ -23,4 +23,5 @@ public class Spawner : MonoBehaviour
         GameObject helicoptere = Instantiate(prefab, transform.position, Quaternion.identity);
         helicoptere.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
     }
+}
 }
