@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+namespace Niveau4 {
 public class GameManager : MonoBehaviour
 {
     public Player player;
@@ -53,4 +53,5 @@ public class GameManager : MonoBehaviour
         score++;
         scoreText.text = score.ToString();
     }
+}
 }

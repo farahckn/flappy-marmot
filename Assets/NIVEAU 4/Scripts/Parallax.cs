@@ -1,5 +1,5 @@
 using UnityEngine;
-
+namespace Niveau4 {
 public class Parallax : MonoBehaviour
 {
     private MeshRenderer meshRenderer;
@@ -15,4 +15,5 @@ public class Parallax : MonoBehaviour
     {
         meshRenderer.material.mainTextureOffset += new Vector2(animationSpeed * Time.deltaTime, 0);
     }
+}
 }

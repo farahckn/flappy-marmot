@@ -1,5 +1,5 @@
 using UnityEngine;
-
+namespace Niveau4 {
 public class Helico : MonoBehaviour
 {
     public float speed = 5f;
@@ -18,4 +18,5 @@ public class Helico : MonoBehaviour
             Destroy(gameObject);
         }
     }
+}
 }

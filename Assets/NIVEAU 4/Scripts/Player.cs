@@ -1,5 +1,5 @@
 using UnityEngine;
-
+namespace Niveau4 {
 public class Player : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
@@ -65,4 +65,5 @@ public class Player : MonoBehaviour
             FindObjectOfType<GameManager>().IncreaseScore();
         }
     }
+}
 }
