@@ -22,7 +22,7 @@ namespace Niveau2
 
         private void Update()
         {
-            if (score >= 3)
+            if (score >= 15)
             {
                 level3Button.gameObject.SetActive(true);
                 Pause();
