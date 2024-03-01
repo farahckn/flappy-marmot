@@ -5,10 +5,12 @@ namespace Niveau2
 {
     public class GameManager : MonoBehaviour
     {
+
         public Player player;
         public Text scoreText;
         public GameObject playButton;
         public GameObject gameOver;
+        public Button level3Button;
 
         private int score;
 
@@ -17,7 +19,19 @@ namespace Niveau2
             Application.targetFrameRate = 60;
 
             Pause();
+            level3Button.gameObject.SetActive(false);
         }
+
+        private void Update()
+        {
+            
+            if (score >= 5)
+            {
+                level3Button.gameObject.SetActive(true);
+                Pause();
+            }
+        }
+
         public void Play()
         {
             score = 0;
@@ -54,6 +68,11 @@ namespace Niveau2
         {
             score++;
             scoreText.text = score.ToString();
+        }
+
+         public void LoadLevel3()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("LEVEL03");
         }
     }
 }

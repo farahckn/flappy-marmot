@@ -8,6 +8,7 @@ namespace Niveau3
           public Text scoreText;
           public GameObject playButton;
           public GameObject gameOver;
+          public Button level4Button;
 
           private int score;
 
@@ -15,7 +16,18 @@ namespace Niveau3
           {
                Application.targetFrameRate = 60;
                Pause();
+               level4Button.gameObject.SetActive(false);
           }
+
+          private void Update()
+        {
+            
+            if (score >= 8)
+            {
+                level4Button.gameObject.SetActive(true);
+                Pause();
+            }
+        }
 
           public void Play()
           {
@@ -55,5 +67,10 @@ namespace Niveau3
                score++;
                scoreText.text = score.ToString();
           }
+
+          public void LoadLevel4()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("LEVEL04");
+        }
      }
 }
