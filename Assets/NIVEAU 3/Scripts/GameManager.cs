@@ -21,7 +21,7 @@ namespace Niveau3
 
           private void Update()
           {
-            if (score >= 3)
+            if (score >= 20)
             {
                 level4Button.gameObject.SetActive(true);
                 Pause();
