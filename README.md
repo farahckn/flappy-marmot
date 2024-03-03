@@ -22,7 +22,7 @@ Caractéristiques principales
 Installation
     Clonez le dépôt :
 
-    git clone https://github.com/votre-utilisateur/marmotte-flappy.git
+    git clone git@github.com:farahckn/flappy-marmot.git
 
 
 Ouvrez le projet dans Unity.
