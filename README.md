@@ -1,4 +1,4 @@
-Marmotte Flappy - Jeu Unity en C#
+Flappy Marmot - Jeu Unity en C#
 
 Bienvenue dans Marmotte Flappy, un jeu amusant et addictif inspiré du célèbre Flappy Bird, avec une touche unique mettant en vedette une marmotte intrépide ! Préparez-vous à relever le défi et à explorer des niveaux passionnants dans ce jeu de vol sans fin.
 Captures d'écran
